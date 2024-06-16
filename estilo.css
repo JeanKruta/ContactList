@@ -1,0 +1,73 @@
+html, body{
+    height: 100%;
+}
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#h1-main{
+    color: #385555;
+}
+.container-main{
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgb(0, 0, 0);
+}
+.object-list{
+    display: flex;
+    gap: 10px;
+    }
+.foto{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.foto img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.main-list{
+    list-style-type: none;
+    padding: 0;
+}
+.object-list{
+    display: flex;
+    border-bottom: 2px solid #eee;
+    padding: 16px;
+}
+.object-list:hover{
+    background-color: #e8e8e8;
+}
+.edit-del{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    opacity: 0;
+}
+.object-list:hover .edit-del{
+    opacity: 0.5;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    flex-gorw: 1;
+}
+.p-main{
+    opacity: 0.5;
+    margin-top: -5%;
+}
